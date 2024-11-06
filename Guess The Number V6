@@ -22,6 +22,7 @@ while runner:
     print(" ")
     print(f"You previously guessed: {guesses}")
     user_number=int(input("Please put a number between 1-100: "))
+    print(" ")
     guesses.append(user_number)
     if user_number > magic_number:
       print("Your number is greater than the guess.")
