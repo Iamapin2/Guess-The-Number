@@ -19,15 +19,15 @@ while runner:
 
 
   while counter <= 7:
+    print(" ")
     print(f"You previously guessed: {guesses}")
     user_number=int(input("Please put a number between 1-100: "))
     guesses.append(user_number)
     if user_number > magic_number:
-      print(" ")
       print("Your number is greater than the guess.")
     if user_number < magic_number:
-      print(" ")
       print("Your number is less than the guess.")
+    print(f"Amount of guesses left {counter}/7.")
     if magic_number == user_number:
       number_won = number_won + 1
       print("You have guessed correctly.")
